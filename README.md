@@ -1,3 +1,4 @@
+<img width="600" src="https://github.com/abdullaah019/PowerShell-Suspicious-Web-Request-Detection-Lab/blob/main/screen.JPG" alt="PowerShell Suspicious Web Request Detection Lab"/>
 # PowerShell Suspicious Web Request Detection Lab
 
 ## Lab Purpose
@@ -7,6 +8,7 @@ Simulate, detect, investigate, and respond to malicious PowerShell activity invo
 
 ## Explanation
 Attackers often use legitimate tools like PowerShell to download and run malicious scripts. This allows them to bypass traditional defenses and blend into normal system activity. Detecting these actions is critical for identifying post-exploitation behaviors.
+
 
 ---
 
@@ -34,6 +36,12 @@ DeviceProcessEvents
   - **Host**: Name = DeviceName
   - **Process**: CommandLine = ProcessCommandLine
 - **Incident Creation:** Automatically create incident and group all alerts into a single incident per 24 hours
+
+<img width="500" alt="image" src="https://github.com/abdullaah019/PowerShell-Suspicious-Web-Request-Detection-Lab/blob/main/Capture%203.JPG">
+
+<img width="500" alt="image" src="https://github.com/abdullaah019/PowerShell-Suspicious-Web-Request-Detection-Lab/blob/main/Capture%204.JPG">
+
+
 
 ---
 
@@ -75,6 +83,9 @@ DeviceProcessEvents
 | order by TimeGenerated
 | project TimeGenerated, AccountName, DeviceName, FileName, ProcessCommandLine
 ```
+<img width="500" alt="image" src="https://github.com/abdullaah019/PowerShell-Suspicious-Web-Request-Detection-Lab/blob/main/Capture%201.1.JPG">
+
+<img width="500" alt="image" src="https://github.com/abdullaah019/PowerShell-Suspicious-Web-Request-Detection-Lab/blob/main/Capture%202.JPG">
 
 ### **Script Analysis Findings**
 1. **portscan.ps1** - Scans local IP range for open ports.
