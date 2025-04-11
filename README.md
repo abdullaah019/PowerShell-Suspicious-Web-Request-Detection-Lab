@@ -102,11 +102,5 @@ DeviceProcessEvents
 - Upgraded KnowBe4 training and increased frequency
 - Implemented policy restricting PowerShell for non-essential users
 
----
 
-## Part 4: Cleanup
-- In Sentinel → Threat Management → Incidents, delete your **closed** incident
-- In Sentinel → Configuration → Analytics, delete your **custom** rule
-
-**Important:** Only delete your own content. Use your name to filter if needed.
 
